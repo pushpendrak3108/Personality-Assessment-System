@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="col-12 mx-auto py-5 text-center">
+        <h2>Hello {{ request.user.username }}</h2>
+            {% if not request.user.applicant.taken_mbti_test %}
+                <p>Please copy and paste your recent posts below.</p>
+               <br>
+               <form action="" method="post">
+                {% csrf_token %}
+                   <textarea name="statement" id="statement" rows="10" cols="50" required></textarea><br><br>
+               <input type="submit" class="btn btn-primary" value="Submit" />
+               </form>
+           {% else %}
+                <div class="alert alert-info messages">
+                    <span class="alert-info">
+                        You have completed MBTI test.
+                   </span>
+                </div>
+                <br>
+                <div class="alert alert-info messages">
+                    <span class="alert-info">
+                        <h5>Your predicted personality type is <b>{{ request.user.applicant.mbti_type }}</b>.</h5>
+                    </span>
+                </div>
+                 <br>
+                <div class="alert alert-info messages">
+                    <span class="alert-info">
+                        <h5>The definition of {{ request.user.applicant.mbti_type }} personality type is: <br> {{ trait_def }}</h5>
+                    </span>
+                </div>
+           {% endif %}
+    </div>
+</div>
+{% endblock content %}

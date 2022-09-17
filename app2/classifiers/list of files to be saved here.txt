@@ -1,0 +1,6 @@
+pkl files to be saved here:
+count_vectoriser.pkl
+logistic regression.pkl
+svm models -- FT, IE, NS, PJ
+tfif transformer
+xcount vectoriser

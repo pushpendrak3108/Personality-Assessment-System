@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-6">PERSONALITY ASSESSMENT SYSTEM</h1>
+    <p class="lead">This website is used to determine the personality type of a user on basis of Big Five Personality Traits and Myers Briggs Type Indicator(MBTI).</p>
+    <hr class="my-4">
+    <p>Take Big Five Personality Traits quiz and find your personality type here.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'personality_home' %}" role="button">Start</a>
+    </p>
+    <br>
+    <p>Find your MBTI personality type here.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'mbti_personality_home' %}" role="button">Start</a>
+    </p>
+  </div>
+{% endblock content %}

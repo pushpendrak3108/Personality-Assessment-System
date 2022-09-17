@@ -1,0 +1,29 @@
+{% for p in personality_type.personalityquestion_set.all %}
+    <div class="card" style="margin: 20px 0;">
+        <div class="card-body">
+            <h4 class="card-title">{{forloop.counter}}) {{ p.question_text }}</h4>
+            <label for="stronglydisagree{{forloop.counter}}">
+                <input type="radio" name="choice{{forloop.counter}}" id="stronglydisagree{{forloop.counter}}" value="{% if p.type == "positive" %} 1 {%else%} 5 {% endif %}" required />
+                Strongly Disagree
+            </label><br />
+            <label for="disagree{{forloop.counter}}">
+                <input type="radio" name="choice{{forloop.counter}}" id="disagree{{forloop.counter}}" value="{% if p.type == "positive" %} 2 {%else%} 4 {% endif %}" required />
+                Disagree
+            </label><br />
+            <label for="neutral{{forloop.counter}}">
+                <input type="radio" name="choice{{forloop.counter}}" id="neutral{{forloop.counter}}" value="3" required  />
+                Neutral
+            </label><br />
+            <label for="agree{{forloop.counter}}">
+                <input type="radio" name="choice{{forloop.counter}}" id="agree{{forloop.counter}}" value="{% if p.type == "positive" %} 4 {%else%} 2 {% endif %}" required />
+                Agree
+            </label><br />
+            <label for="stronglyagree{{forloop.counter}}">
+                <input type="radio" name="choice{{forloop.counter}}" id="stronglyagree{{forloop.counter}}" value="{% if p.type == "positive" %} 5 {%else%} 1 {% endif %}" required   />
+                Strongly Agree
+            </label><br />
+
+        </div>
+    </div>
+
+{% endfor %}

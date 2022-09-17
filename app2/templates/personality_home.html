@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="col-12 mx-auto py-5 text-center">
+        <h2>Hello {{ request.user.username }}</h2>
+        <p>You are to complete an aptitude and personality test.</p>
+           {% if not request.user.applicant.taken_apt_test %}
+               <br>
+               <p>Aptitude test consists of 10 simple questions.</p>
+               <a href="{% url 'aptitude_test' %}" class="btn btn-primary btn-lg">Aptitude Test</a>
+           {% elif not request.user.applicant.taken_personality_test %}
+               <p>Personality test consists of 50 questions based on Big 5 personality traits.</p>
+               <a href="{% url 'personality_test' %}" class="btn btn-primary btn-lg">Take Your Personality Test</a>
+           {% else %}
+                <div class="alert alert-info messages">
+                    <span class="alert-info">
+                        You have completed all tests.
+                   </span>
+                </div>
+                <h5>Your predicted personality type is <b>{{ request.user.applicant.predicted_personality_type }}</b>.</h5>
+           {% endif %}
+    </div>
+</div>
+{% endblock content %}

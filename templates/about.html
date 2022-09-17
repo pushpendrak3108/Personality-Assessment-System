@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 align="center">Personality Assessment System</h2>
+            <br>
+            <p align="justify">Personality is a psychological construct aimed at explaining the wide variety of human behaviours in terms of a few, stable and measurable individual characteristics. Personality is useful for recognizing how people lead, influence, communicate, collaborate, negotiate business and manage stress. Personality determines how people interact with outside world.
+                <br>This system provides information about the personality of the user. Based on the personality traits provided by the user, System will match the personality traits with the data stored in database. System will automatically classify the user’s personality by using machine learning and data mining techniques.</p>
+              <h5>Big Five Personality Traits</h5>
+            <p align="justify">Personality classification of a human being by their nature an old technique. Automated personality classification (APC) is a technique used to classify personality of a person based on his/her personality traits. The classification is done using personal behavioural data of a person based on Big Five Personality Traits.
+            <br>The Big-Five personality traits are as follows:
+            <br><b>Extraversion</b>: Active, Assertive, Energetic, Outgoing, Talkative, etc.
+            <br><b>Agreeableness</b>: Appreciative, Kind, Generous, Forgiving, Sympathetic, Trusting, etc.
+            <br><b>Conscientiousness</b>: Efficient, Organized, Planful, Reliable, Responsible, Thorough, etc.
+            <br><b>Neuroticism</b>: Anxious, Self-pitying, Tense, Touchy, Unstable, Worrying, etc.
+            <br><b>Openness</b>: Artistic, Curious, Imaginative, Insightful, Original, Wide interests, etc.
+            </p>
+            <div class="text-center">
+                <img src="{% static "images/personality.png" %}" alt="personality">
+            </div>
+            <br><h5>Myers Briggs Type Indicator</h5>
+            <p align="justify">The Myers Briggs Type Indicator (MBTI) is a personality type system that divides everyone into 16 distinct personalities based on four dimensions, namely: Introversion (I) - Extroversion (E), Intuition (N) - Sensing (S), Thinking (T) - Feeling (F), Judging (J) - Perceiving (P). MBTI is widely used by companies, recommendation systems, and other research domains. MBTI predicted personality traits are found to retain essential properties of the traditional personality characteristics.</p>
+            <div class="text-center">
+                <img src="{% static "images/mbti.png" %}" alt="personality">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+    

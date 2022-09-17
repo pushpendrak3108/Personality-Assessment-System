@@ -1,0 +1,306 @@
+[
+  {
+    "model": "app2.testquestion",
+    "pk": 1,
+    "fields": {
+      "question_text": "Who wrote the Indian National Anthem?"
+    }
+  },
+  {
+    "model": "app2.testquestion",
+    "pk": 2,
+    "fields": {
+      "question_text": "The loudness of sound is determined by what property of a sound wave?"
+    }
+  },
+  {
+    "model": "app2.testquestion",
+    "pk": 3,
+    "fields": {
+      "question_text": "Which planet is known as the Red planet?"
+    }
+  },
+  {
+    "model": "app2.testquestion",
+    "pk": 5,
+    "fields": {
+      "question_text": "What is next number of the following series: 1, 4, 9, 16, 25, ?"
+    }
+  },
+  {
+    "model": "app2.testquestion",
+    "pk": 6,
+    "fields": {
+      "question_text": "What does a light year measure?"
+    }
+  },
+  {
+    "model": "app2.testquestion",
+    "pk": 7,
+    "fields": {
+      "question_text": "What is the unit digit of following expression? - (236*122*431)"
+    }
+  },
+  {
+    "model": "app2.testquestion",
+    "pk": 8,
+    "fields": {
+      "question_text": "Which part of the Earth is the hottest?"
+    }
+  },
+  {
+    "model": "app2.testquestion",
+    "pk": 9,
+    "fields": {
+      "question_text": "What is 40% of 400?"
+    }
+  },
+  {
+    "model": "app2.testquestion",
+    "pk": 10,
+    "fields": {
+      "question_text": "Which of the following is not a prime number?"
+    }
+  },
+  {
+    "model": "app2.testquestion",
+    "pk": 11,
+    "fields": {
+      "question_text": "Select the word [Happy] from the options below."
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 1,
+    "fields": {
+      "choice_text": "Bankim Chandra Chatterji",
+      "question": 1,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 2,
+    "fields": {
+      "choice_text": "Rabindranath Tagore",
+      "question": 1,
+      "is_answer": true
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 3,
+    "fields": {
+      "choice_text": "Swami Vivekanand",
+      "question": 1,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 4,
+    "fields": {
+      "choice_text": "Amplitude",
+      "question": 2,
+      "is_answer": true
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 5,
+    "fields": {
+      "choice_text": "Frequency",
+      "question": 2,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 6,
+    "fields": {
+      "choice_text": "Mars",
+      "question": 3,
+      "is_answer": true
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 7,
+    "fields": {
+      "choice_text": "Mercury",
+      "question": 3,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 8,
+    "fields": {
+      "choice_text": "Saturn",
+      "question": 3,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 9,
+    "fields": {
+      "choice_text": "36",
+      "question": 5,
+      "is_answer": true
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 10,
+    "fields": {
+      "choice_text": "40",
+      "question": 5,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 11,
+    "fields": {
+      "choice_text": "Distance",
+      "question": 6,
+      "is_answer": true
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 12,
+    "fields": {
+      "choice_text": "Time",
+      "question": 6,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 13,
+    "fields": {
+      "choice_text": "2",
+      "question": 7,
+      "is_answer": true
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 14,
+    "fields": {
+      "choice_text": "1",
+      "question": 7,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 15,
+    "fields": {
+      "choice_text": "Core",
+      "question": 8,
+      "is_answer": true
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 16,
+    "fields": {
+      "choice_text": "Mantle",
+      "question": 8,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 17,
+    "fields": {
+      "choice_text": "Crust",
+      "question": 8,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 18,
+    "fields": {
+      "choice_text": "160",
+      "question": 9,
+      "is_answer": true
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 19,
+    "fields": {
+      "choice_text": "100",
+      "question": 9,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 20,
+    "fields": {
+      "choice_text": "91",
+      "question": 10,
+      "is_answer": true
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 21,
+    "fields": {
+      "choice_text": "31",
+      "question": 10,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 22,
+    "fields": {
+      "choice_text": "71",
+      "question": 10,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 23,
+    "fields": {
+      "choice_text": "Happy",
+      "question": 11,
+      "is_answer": true
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 24,
+    "fields": {
+      "choice_text": "Sad",
+      "question": 11,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 25,
+    "fields": {
+      "choice_text": "Angry",
+      "question": 11,
+      "is_answer": false
+    }
+  },
+  {
+    "model": "app2.testchoice",
+    "pk": 26,
+    "fields": {
+      "choice_text": "Confused",
+      "question": 11,
+      "is_answer": false
+    }
+  }
+]

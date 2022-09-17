@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="container">
+        
+        {% if completed %}
+           <h5>You have completed your personality test.</h5>
+            <img src="{{ image }}" width="576" height="432">
+            <br>
+            <br>
+            <h5>Your predicted personality type is <b>{{ personality }}</b></h5>
+            <br>
+            <a href="{% url 'logout' %}" class="btn btn-primary">Logout</a>
+        {% else %}
+            <h4>Error!!</h4>
+            <p>Something went wrong. Contact the admin if this problem persists.</p>
+        {% endif %}
+            
+        
+    </div>
+{% endblock content %}
+    
